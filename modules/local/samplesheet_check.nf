@@ -24,6 +24,6 @@ process SAMPLESHEET_CHECK {
 
     script:  // This script is bundled with the pipeline, in nf-core/bactmap/bin/
     """
-    check_samplesheet.py $samplesheet samplesheet.valid.csv
+    python check_samplesheet.py $samplesheet samplesheet.valid.csv
     """
 }
